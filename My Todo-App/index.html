@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Todo app</title>
+
+ 
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+      <div class="todo-box">
+        <div class="box-top">
+          <div class="section">
+            <h1>TODO</h1>
+            <div class="mode" onclick="changeMode()">
+              <img src="images/icon-moon.svg" alt="" class="moon" onclick="changeMode()">
+              <img src="images/icon-sun.svg" alt="" class="sun" onclick="changeMode()">
+            </div>
+              
+            
+           
+          </div>
+          <div class="input-box">
+           <input type="text" id="Input" class="inputColor" placeholder="Create a new todo...">
+          </div>
+            
+          
+         
+        </div>
+        <div class="box-bottom">
+          <div class="todo">
+            <div class="todo-call">
+              
+            </div>
+            <div class="info">
+              <p class="items">
+                <span id="numb">0</span> items left
+              </p>
+              
+              <div class="choice">
+                <p onclick="showAll()">All</p>
+                <p class="ACTIVE">Active</p>
+                <p class="completed" onclick="Completed()">Completed</p>
+              </div>
+              
+              
+              <p class="clear" onclick="clearAll()">Clear Completed</p>
+
+            </div>
+          </div>
+        
+        </div>
+      </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
